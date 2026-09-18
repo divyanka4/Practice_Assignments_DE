@@ -37,7 +37,7 @@ targets:
     workspace:
       host: https://dbc-af5175d7-cbe7.cloud.databricks.com/
       # We explicitly deploy to /Workspace/Users/paldivya0222@gmail.com to make sure we only have a single copy.
-      root_path: /Workspace/Users/paldivya0222@gmail.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/d7f7ae0c-376f-4f1f-8586-0c41fd8c43d3/.bundle/${bundle.name}/${bundle.target}
     variables:
       catalog: dev
       schema: prod
@@ -47,4 +47,6 @@ targets:
 
     permissions:
       - user_name: paldivya0222@gmail.com
+        level: CAN_MANAGE
+      - service_principal_name: "d7f7ae0c-376f-4f1f-8586-0c41fd8c43d3"
         level: CAN_MANAGE
